@@ -103,7 +103,12 @@ This analysis was built to answer those questions with data — and to give lead
 ecommerce-sales-performance-analysis/
 │
 ├── data/
-│   └── data.csv                    # Raw dataset (UCI Online Retail)
+│   ├── data.csv                  # Raw dataset (UCI Online Retail)
+│   └── data_clean.csv            # Clean dataset
+│
+├── notebook
+│    ├── ecommerce_analysis.ipynb   # Full Jupyter Notebook (primary deliverable)
+│
 ├── dashboard/
 │    ├── ecommerce_dashboard.PNG    # Dashboard snapshot
 │    ├── ecommerce_dashboard.pbix   # Interactive dashboard
@@ -120,7 +125,6 @@ ecommerce-sales-performance-analysis/
 │   ├── 09_cohort_retention.png
 │   ├── 10_rfm_segments.png
 │
-├── ecommerce_analysis.ipynb        # Full Jupyter Notebook (primary deliverable)
 ├── ecommerce_report.docx           # Analytical report (Word)
 ├── ecommerce_analysis.pptx         # Executive presentation (PowerPoint)
 ├── requirements.txt                # Python dependencies
