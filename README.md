@@ -9,6 +9,17 @@
 
 ---
 
+## 📊 Dashboard
+
+![E-Commerce Sales Performance Dashboard](dashboard/ecommerce_dashboard.PNG)
+
+> The static image above is a snapshot of the live dashboard.
+> **The interactive version** supports filtering by Year, Country, Customer Segment, and Quarter — with dynamic titles that update on every selection.
+> - 🔗 [View Live Dashboard →](https://app.powerbi.com/groups/me/reports/5900d8ac-fb50-45cc-a583-5d4ff48cb27d/24a0f9a1c68a8b22acf6?experience=power-bi) *(Requires a Power BI account)*
+> - 📥 [Download Power BI File (.pbix) →](ecommerce_dashboard.pbix) *(Open locally with Power BI Desktop)*
+
+---
+
 ## Project Summary
 
 An online gift and homewares retailer needed to understand where its revenue was coming from, which customers were most valuable, and why a large portion of buyers never returned after their first purchase. This project analyses over 500,000 transactions across 37 countries to answer those questions and deliver clear, actionable strategies for growth.
@@ -83,8 +94,6 @@ This analysis was built to answer those questions with data — and to give lead
 | **Pandas & NumPy** | Data cleaning, transformation, and aggregation |
 | **Matplotlib & Seaborn** | Data visualisation |
 | **Jupyter Notebook** | Structured, reproducible analysis environment |
-| **PptxGenJS** | Executive PowerPoint presentation |
-| **Docx.js** | Formal Word analytical report |
 
 ---
 
@@ -95,7 +104,10 @@ ecommerce-sales-performance-analysis/
 │
 ├── data/
 │   └── data.csv                    # Raw dataset (UCI Online Retail)
-│
+├── dashboard/
+│    ├── ecommerce_dashboard.PNG    # Dashboard snapshot
+│    ├── ecommerce_dashboard.pbix   # Interactive dashboard
+│ 
 ├── charts/                         # All 10 generated visualisations
 │   ├── 01_monthly_revenue.png
 │   ├── 02_top_countries.png
@@ -217,25 +229,6 @@ Schedule email sends and paid ads for Tuesdays and Thursdays. Test weekend flash
 
 ---
 
-## 📊 Visualisations
-
-The analysis produced 10 professional charts covering:
-
-| # | Chart | Business Question Answered |
-|---|---|---|
-| 1 | Monthly Revenue Trend | How is revenue growing over time? |
-| 2 | Top 10 Countries by Revenue | Where is revenue coming from geographically? |
-| 3 | Top 10 Products by Revenue | Which products are driving the most value? |
-| 4 | Revenue by Day of Week | When are customers most likely to buy? |
-| 5 | RFM Segment Distribution | How are customers segmented by value? |
-| 6 | Average Order Value by Month | How does basket size change across the year? |
-| 7 | Purchase Frequency Distribution | How often do customers return? |
-| 8 | Cohort Retention Heatmap | How well does the business retain customers? |
-| 9 | Underperforming Products | Which SKUs have the lowest revenue per transaction? |
-| 10 | Customer Lifetime Value Distribution | What is the spread of customer value? |
-
----
-
 ## ▶️ How to Run This Project
 
 **1. Clone the repository**
@@ -267,7 +260,6 @@ numpy>=1.23.0
 matplotlib>=3.6.0
 seaborn>=0.12.0
 jupyter>=1.0.0
-nbformat>=5.7.0
 ```
 
 ---
